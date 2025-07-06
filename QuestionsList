@@ -1,1 +1,16 @@
 Array Questions  - level easy
+Q1 - Second Largest element -
+ans= class Main {
+    public static void main(String[] args) {
+        int[]arr ={1,2,3,4,6,7,7,8,8,9}; //sorted array
+        int largest = arr[arr.length-1]; //8
+        int SecondLargest=0;
+        
+        for(int i=arr.length-2;i>0;i--){
+            if(arr[i]<largest){
+                 SecondLargest = arr[i];
+                 break;
+            }
+        }
+        System.out.println("SecondLarge is = " +SecondLargest);
+    }
